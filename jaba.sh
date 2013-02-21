@@ -3,6 +3,6 @@
 LOGFILE=$HOME/jaba.log
 CMD=java-old
 
-echo $@ >> $LOGFILE
+echo `date "+%Y-%m-%d %H:%M:%S"` ": $@" >> $LOGFILE
 
 $CMD $@
